@@ -1,0 +1,10 @@
+*.numbers
+data/*
+models/*
+docs/*
+trips*
+catboost_info*
+*.csv
+*.numbers
+*.db
+
