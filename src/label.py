@@ -39,9 +39,7 @@ def clean_data(data_dir):
             os.rename(os.path.join(data_dir, f), os.path.join(data_dir, 'backup', f))
 
 def label(data_dir, master_csv, model_file=None):
-    api_key = os.getenv("OPENAI_API_KEY")
-    cleaner = DataCleaner(api_key=api_key)
-    # get month name in format MMMMM like "January", "February", etc.
+    cleaner = DataCleaner()
     month = datetime.datetime.now().strftime('%B')
     os.makedirs(os.path.join(data_dir, month), exist_ok=True)
 
@@ -51,7 +49,7 @@ def label(data_dir, master_csv, model_file=None):
         print(f"Creating new master CSV file: {master_csv}")
         master_df = pd.DataFrame()
     account_names = set(master_df['account']) if not master_df.empty else set()
-    classifier = SpendingClassifier(api_key=api_key, iterations=1000, learning_rate=0.1, depth=6, loss_function='MultiClass')
+    classifier = SpendingClassifier(iterations=1000, learning_rate=0.1, depth=6, loss_function='MultiClass')
     if model_file:
         print(f"Loading model from {model_file}")
         classifier.load_model(model_file)

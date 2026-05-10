@@ -7,4 +7,7 @@ catboost_info*
 *.csv
 *.numbers
 *.db
+.claude/worktrees
+.DS_Store
+**.pyc
 
