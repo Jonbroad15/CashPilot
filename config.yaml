@@ -1,0 +1,29 @@
+# Paste the ID from your Google Sheet URL: docs.google.com/spreadsheets/d/<SHEET_ID>/edit
+sheet_id: "1B6coYxHuBH8z7UN_CspvsnK8Y5f5VeuRHRlGEwMLJTQ"
+
+# type: spending | income | excluded   (excluded = left out of all totals)
+categories:
+  housing:       {type: spending,  desc: "Rent, mortgage, property tax, home insurance, e-transfers to landlord/roommates"}
+  utilities:     {type: spending,  desc: "Electricity, water, gas, internet, phone, insurance premiums"}
+  transit:       {type: spending,  desc: "Public transit and micromobility: TTC/Presto, subway/bus/train, ferries, bike share, e-scooters"}
+  automobile:    {type: spending,  desc: "Car rentals and car-share subscriptions, gas, car insurance, taxis, Uber/Lyft/Grab rideshares, parking"}
+  groceries:     {type: spending,  desc: "Supermarkets and food shopping"}
+  restaurants:   {type: spending,  desc: "Restaurants, takeout, delivery, bars"}
+  coffee:        {type: spending,  desc: "Coffee shops, tea"}
+  alcohol:       {type: spending,  desc: "Alcohol, cannabis"}
+  entertainment: {type: spending,  desc: "Movies, concerts, events, subscriptions, leisure"}
+  travel:        {type: spending,  desc: "Flights, hotels, trip expenses"}
+  wellness:      {type: spending,  desc: "Gym, healthcare, pharmacy, hygiene"}
+  gifts:         {type: spending,  desc: "Presents, donations"}
+  supplies:      {type: spending,  desc: "Home improvement, electronics, household supplies"}
+  cats:          {type: spending,  desc: "Anything for our cats (adopted Sept 2026): food, vet, equipment, furniture, litter; sometimes bought on Amazon"}
+  clothing:      {type: spending,  desc: "Clothes and shoes"}
+  purchases:     {type: spending,  desc: "Other larger or one-off purchases"}
+  fees:          {type: spending,  desc: "Bank fees, card fees, interest charged"}
+  cash:          {type: spending,  desc: "ATM cash withdrawals"}
+  capital_gl:    {type: spending,  desc: "Investment interest, capital gains (credit) / losses (debit)"}
+  savings:       {type: spending,  desc: "Contributions to savings or registered accounts treated as outflow"}
+  investments:   {type: spending,  desc: "Money moved into / gained from investments"}
+  income:        {type: income,    desc: "Employment pay and other earnings"}
+  rebates:       {type: income,    desc: "Government benefits, tax refunds, cashback, reimbursements"}
+  transfers:     {type: excluded,  desc: "Moves between own accounts and credit-card payments"}

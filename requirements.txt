@@ -1,8 +1,4 @@
-catboost
 pandas
-numpy
-matplotlib
-seaborn
-sentence-transformers
-scikit-learn
+pyyaml
+gspread
 pytest

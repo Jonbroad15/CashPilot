@@ -12,3 +12,10 @@ catboost_info*
 **.pyc
 
 google drive/
+
+# budget pipeline data
+inbox/*
+!inbox/.gitkeep
+archive/
+work/
+legacy/

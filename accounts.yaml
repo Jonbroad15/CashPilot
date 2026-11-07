@@ -1,0 +1,25 @@
+# Statement filename must START with the account key (e.g. amex_cobalt_oct.csv -> amex_cobalt).
+# owner: Jonathan | Deweena | Joint
+# positive_is: debit  -> a positive "Amount" column is a charge (Amex style, default)
+#              credit -> a positive "Amount" is money in (bank style)
+# aliases: old account names in master.csv for the same account (so overlapping history isn't re-added)
+# card_members: optional; if the statement has a "Card Member" column, that name sets the owner
+#   e.g. {owner: Jonathan, card_members: {DEWEENA: Deweena, JONATHAN: Jonathan}}
+
+# --- Jonathan
+cibc_dividend:               {owner: Jonathan}
+amex_aeroplan:               {owner: Jonathan, card_members: {DEWEENA: Deweena, JONATHAN: Jonathan}}
+amex_cobalt:                 {owner: Jonathan, card_members: {DEWEENA: Deweena, JONATHAN: Jonathan}}
+jonathan_amex_platinum:      {owner: Jonathan, aliases: [amex_platinum]}
+jonathan_cibc_mastercard:    {owner: Jonathan}
+jonathan_cibc_visa:          {owner: Jonathan}
+jonathan_wealthsimple_chequings: {owner: Jonathan, positive_is: credit, aliases: [wealthsimple]}
+jonathan_wealthsimple_visa:  {owner: Jonathan, positive_is: credit}
+wealthsimple:                {owner: Jonathan, positive_is: credit}
+# --- Deweena
+deweena_amex_gold:           {owner: Deweena}
+deweena_amex_platinum:       {owner: Deweena}
+deweena_wealthsimple_cash:   {owner: Deweena, positive_is: credit}
+# --- Joint
+joint_amex_cobalt:           {owner: Joint, aliases: [amex_cobalt]}
+joint_wealthsimple_cuddles:  {owner: Joint, positive_is: credit}

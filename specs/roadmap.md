@@ -1,3 +1,5 @@
+> **Superseded** by the agent-driven Google Sheets workflow (see AGENTS.md). Kept for reference.
+
 # Roadmap
 
 ## Shipped
